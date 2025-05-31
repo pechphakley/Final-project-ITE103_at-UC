@@ -129,6 +129,21 @@
         width: calc(50% - 20px);
       }
     }
+
+    @media (max-width: 480px) {
+  .card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 700px) {
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+}
 	marquee img {
 	width: 40px
 	}
@@ -187,5 +202,41 @@
       margin-top: 40px;
     
     }
+
+    /* Wrapper for cards */
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+}
+
+/* Default: 4 cards in a row */
+.img_card {
+  width: calc(25% - 20px); /* 4 cards with gap */
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border: 3px solid gold;
+}
+
+/* On medium screen: 2 cards per row */
+@media screen and (max-width: 992px) {
+  .img_card {
+    width: calc(50% - 20px);
+  }
+}
+
+/* On very small screens: 100% width (1 per row if needed) */
+@media screen and (max-width: 576px) {
+  .img_card {
+    width: 100%;
+  }
+}
+
    
 

@@ -25,20 +25,6 @@
       font-family: 'Khmer OS Siemreap', Arial, sans-serif;
     }
 
-    @media screen and (max-width: 900px) {
-      .card_image {
-        width: 50%;
-      }
-    }
-
-    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
-      .card_image {
-        width: 100%;
-      }
-    }
-
-
     .banner {
       width: 100%;
       padding: 10px 0;
@@ -95,21 +81,6 @@
       border-radius: 5px;
     }
 
-    .img_card img {
-      width: 100%;
-      height: auto;
-      border: 3px solid blue;
-      border-radius: 4px;
-      transition: transform 0.3s ease;
-    }
-
-    .card {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-
     .footer {
       background-color: #003366;
       color: white;
@@ -164,25 +135,27 @@
     </div>
 
     <h2 style="text-align:center; font-family: serif; font-size: 30px;">Studying Activities in CoST</h2>
-    <div class="card" style="display: flex; justify-content: center;">
+
+    <div class="card-wrapper">
       <div class="img_card">
-        <img src="image/a.jpg" alt="a">
+        <img src="image/a.jpg" alt="Card 1">
         <p class="p_des">Web Development-HTML CSS</p>
       </div>
       <div class="img_card">
-        <img src="image/b.jpg" alt="b">
-        <p class="p_des"> Studying Multimedia Lab</p>
+        <img src="image/b.jpg" alt="Card 2">
+        <p class="p_des">Studying Multimedia Lab</p>
       </div>
-
       <div class="img_card">
-        <img src="image/c.jpg" alt="c">
+        <img src="image/c.jpg" alt="Card 3">
         <p class="p_des">Studying IT-Center Lab</p>
       </div>
       <div class="img_card">
-        <img src="image/d.jpg" alt="d">
+        <img src="image/d.jpg" alt="Card 4">
         <p class="p_des">Graduation 2025</p>
       </div>
     </div>
+
+
 
 
     <h2 style="text-align:center; margin-top: 40px; font-family: serif; font-size: 30px;">Computer Labs College CoST
@@ -193,28 +166,30 @@
       </marquee>
       </marquee>
     </h2>
-    <div class="card">
+    <div class="card-wrapper">
       <div class="img_card">
-        <img src="image/e.jpg" alt="e">
+        <img src="image/e.jpg" alt="Card 1">
         <p class="p_des">Multimedia Lab</p>
       </div>
       <div class="img_card">
-        <img src="image/f.jpg" alt="f">
+        <img src="image/f.jpg" alt="Card 2">
         <p class="p_des">Networking Lab</p>
       </div>
       <div class="img_card">
-        <img src="image/g.jpg" alt="g">
+        <img src="image/g.jpg" alt="Card 3">
         <p class="p_des">IT-Center Lab</p>
       </div>
       <div class="img_card">
-        <img src="image/h.jpg" alt="h">
+        <img src="image/h.jpg" alt="Card 4">
         <p class="p_des">IT-Center Update</p>
       </div>
+    </div>
     </div>
     <div class="footer">
       <img src="image/uc.png" width="40" height="40" alt="UC Logo">
       <p style="text-align:center">Copyright © University of Cambodia</p>
     </div>
+
 
 </body>
 

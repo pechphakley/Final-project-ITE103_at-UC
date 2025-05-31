@@ -1,0 +1,305 @@
+</html>
+<!DOCTYPE html>
+<html lang="kh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="image/icon.jpg">
+    <title>BMIT - University of Cambodia</title>
+    <link rel="stylesheet" href="allstyle.css">
+    <style>
+        @font-face {
+            font-family: 'Khmer OS Siemreap';
+            src: url('fonts/KhmerOSsiemreap.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Khmer OS Siemreap', Arial, sans-serif;
+
+            padding: 0;
+        }
+
+        .khmer-text {
+            font-family: 'Khmer OS Siemreap', Arial, sans-serif;
+        }
+        }
+
+        .banner {
+            width: 100%;
+            padding: 10px 0;
+            margin-top: 40px;
+            height: auto;
+
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+        }
+
+        .navbar {
+            background-color: #003366;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 16px;
+            display: inline-block;
+            transition: all 0.1s ease;
+            transform: scale(1);
+        }
+
+        .navbar a:hover {
+            background-color: #004c99;
+            transform: scale(1.05);
+            text-shadow: 0 0 6px #FFA07A;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 260px;
+            max-width: 95vw;
+            left: 50%;
+            transform: translateX(-50%);
+            /* Center it */
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+            padding: 8px 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        @media (max-width: 480px) {
+            .dropdown-content {
+                max-width: 90vw;
+            }
+        }
+
+        .dropdown-content a {
+            display: block;
+            color: black;
+            padding: 10px 14px;
+            text-decoration: none;
+            font-family: 'Khmer OS Siemreap', Arial, sans-serif;
+            font-size: 14px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .dropdown-content a span {
+            font-style: italic;
+        }
+
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #004c99;
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 1328px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #003366;
+            text-align: center;
+        }
+
+        .news-item {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border: 3px solid blue;
+            border-radius: 4px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid blue;
+            text-align: center;
+            padding: 10px;
+        }
+
+        marquee img {
+            width: 90px;
+        }
+
+        marquee {
+            font-size: 35px;
+            color: white;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="background-color:darkblue;">
+        <marquee behavior="scroll" direction="up" scrollamount="2">
+            <img src="image/cost.jpg">ស្វាគមន៍មកកាន់ Major Business Management Information Technology
+        </marquee>
+        </marquee>
+    </h2>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="Facultymembers.html">Faculty Members</a>
+        <a href="training.html">Professional Training</a>
+        <a href="videos.html">Videos</a>
+        <div class="dropdown">
+            <a class="dropbtn">CoST Bachelor Programs</a>
+            <div class="dropdown-content">
+                <a href="IT.html">Information Technology <span style="color:blue;">Since 2003</span></a>
+                <a href="CS.html">Computer Science <span style="color:blue;">Since 2003</span></a>
+                <a href="ETC.html">Electronics and Telecommunications <span style="color:blue;">Since 2003</span></a>
+                <a href="GDM.html">Graphic Design And Multimedia <span style="color:red;">New 2026</span></a>
+                <a href="BMIT.html">Business Management Information Technology <span style="color:red;">New
+                        2026</span></a>
+                <a href="NECS.html">Network Engineering and Cyber Security <span style="color:red;">New 2026</span></a>
+                <a href="DSAI.html">Data Science and Artificial Intelligence <span style="color:red;">New
+                        2026</span></a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a>Computer Labs</a>
+            <div class="dropdown-content">
+                <a href="Lab1.html">Multimedia Lab</a>
+                <a href="Lab2.html">E-learning Lab</a>
+                <a href="Lab3.html">Networking Lab</a>
+                <a href="Lab4.html">IT Center Lab</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1 style="color:#b399ff">Business Management Information Technology </h1>
+
+        <div class="news-item">
+
+            <p class="khmer-text">ស្វាគមន៍មកកាន់មហាវិទ្យាល័យវិទ្យាសាស្ត្រ និងបច្ចេកវិទ្យានៃសាកលវិទ្យាល័យកម្ពុជា។
+                សម្រាប់ប្អូនៗសិស្សានុសិស្ស ដែលមានបំណងចង់បន្តការសិក្សាថ្នាក់បរិញ្ញាបត្ររង និងថ្នាក់បរិញ្ញាបត្រ។
+                សូមចុះឈ្មោះជាមួយយើងឥឡូវនេះ ឬអាចអញ្ជើញមកកាន់សាកលវិទ្យាល័យផ្ទាល់ក៏បាន។
+            </p>
+            <p class="khmer-text">Welcome to College of Science and Technology of The University of Cambodia. For
+                everyone who wishes to pursue for any AA and BA degrees of the study programs, please register now or
+                visit the campus of The University of Cambodia.
+                Our Information Technology Management for Business (ITMB) degree covers a vibrant mix of transferable
+                skills and knowledge for those who want exciting and challenging management or professional careers
+                designing, developing and implementing technology solutions for businesses. The ITMB degree is designed
+                to offer an insight into the real world of IT. It allows you to learn the people and project management
+                skills required to be a successful IT professional.
+                <br>
+            <h2>Program Learning Outcomes</h2>
+            As a graduate, you will be prepared to reliably demonstrate the ability to:<br>
+            1-Analyze business problems and make ethically sound strategic decisions enabled by Information Technology
+            (IT).<br>
+            M2-anage a business technology project within a cross-functional and multi-disciplinary team by applying
+            project management principles.<br>
+            3-Adopt operations management principles and information technology to improve efficiency and effectiveness
+            of business processes.<br>
+            4-Propose strategic and operational solutions by applying principles of management accounting and financial
+            analysis.<br>
+            5-Design information technology solutions that automate and support business processes.<br>
+            6-Model ethical, legal and professional codes of conduct of the Canadian business environment and global
+            marketplace.<br>
+            7-Build data solutions to support business operations, strategic decision making and business planning to
+            improve organizational performance and ensure adequate risk management.<br>
+            8-Evaluate organizational structures and management processes, with a focus on small and medium-sized
+            enterprises, to improve organizational performance.<br>
+            9-Provide direction about the opportunities for the integration of technology, commerce and marketing to
+            support innovative digital business models.<br>
+
+
+            </p>
+        </div>
+        <h2 style="background-color:darkblue; color:white; text-align: left;">Majors Offering in College of Science and
+            Technology</h2>
+        <table>
+            <tr>
+                <th>Majors</th>
+                <th>Associate, Bachelor</th>
+                <th>Master Degree, PhD</th>
+            </tr>
+            <tr>
+                <td>Computer Science (Offering)</td>
+                <td>AA and BA</td>
+                <td>MS and PhD</td>
+            </tr>
+            <tr>
+                <td>Information Technology (Offering)</td>
+                <td>BA</td>
+                <td>MS</td>
+            </tr>
+            <tr>
+                <td>Electronics and Telecommunications (Not Offering yet)</td>
+                <td>BA</td>
+                <td>MS</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="footer">
+        <img src="image/uc.png" width="40" height="40" alt="UC Logo">
+        <p>Copyright © University of Cambodia</p>
+    </div>
+</body>
+
+</html>

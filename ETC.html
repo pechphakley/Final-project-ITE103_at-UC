@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="kh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="image/icon.jpg">
+    <title>ETC - University of Cambodia</title>
+    <link rel="stylesheet" href="allstyle.css">
+    <style>
+        @font-face {
+            font-family: 'Khmer OS Siemreap';
+            src: url('fonts/KhmerOSsiemreap.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'Khmer OS Siemreap', Arial, sans-serif;
+
+            padding: 0;
+        }
+
+        .khmer-text {
+            font-family: 'Khmer OS Siemreap', Arial, sans-serif;
+        }
+        }
+
+        .banner {
+            width: 100%;
+            padding: 10px 0;
+            margin-top: 40px;
+            height: auto;
+
+        }
+
+        .banner img {
+            width: 100%;
+            height: auto;
+        }
+
+        .navbar {
+            background-color: #003366;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 16px;
+            display: inline-block;
+            transition: all 0.1s ease;
+            transform: scale(1);
+        }
+
+        .navbar a:hover {
+            background-color: #004c99;
+            transform: scale(1.05);
+            text-shadow: 0 0 6px #FFA07A;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 260px;
+            max-width: 95vw;
+            left: 50%;
+            transform: translateX(-50%);
+            /* Center it */
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+            padding: 8px 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        @media (max-width: 480px) {
+            .dropdown-content {
+                max-width: 90vw;
+            }
+        }
+
+        .dropdown-content a {
+            display: block;
+            color: black;
+            padding: 10px 14px;
+            text-decoration: none;
+            font-family: 'Khmer OS Siemreap', Arial, sans-serif;
+            font-size: 14px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .dropdown-content a span {
+            font-style: italic;
+        }
+
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #004c99;
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 1328px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #003366;
+            text-align: center;
+        }
+
+        .news-item {
+            margin-bottom: 30px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border: 3px solid blue;
+            border-radius: 4px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid blue;
+            text-align: center;
+            padding: 10px;
+        }
+
+        marquee img {
+            width: 90px;
+        }
+
+        marquee {
+            font-size: 40px;
+            color: white;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="background-color:darkblue;">
+        <marquee behavior="scroll" direction="up" scrollamount="2">
+            <img src="image/cost.jpg">ស្វាគមន៍មកកាន់ Major Electronics and Telecommunications
+        </marquee>
+        </marquee>
+    </h2>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="Facultymembers.html">Faculty Members</a>
+        <a href="training.html">Professional Training</a>
+        <a href="videos.html">Videos</a>
+        <div class="dropdown">
+            <a class="dropbtn">CoST Bachelor Programs</a>
+            <div class="dropdown-content">
+                <a href="IT.html">Information Technology <span style="color:blue;">Since 2003</span></a>
+                <a href="CS.html">Computer Science <span style="color:blue;">Since 2003</span></a>
+                <a href="ETC.html">Electronics and Telecommunications <span style="color:blue;">Since 2003</span></a>
+                <a href="GDM.html">Graphic Design And Multimedia <span style="color:red;">New 2026</span></a>
+                <a href="BMIT.html">Business Management Information Technology <span style="color:red;">New
+                        2026</span></a>
+                <a href="NECS.html">Network Engineering and Cyber Security <span style="color:red;">New 2026</span></a>
+                <a href="DSAI.html">Data Science and Artificial Intelligence <span style="color:red;">New
+                        2026</span></a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a>Computer Labs</a>
+            <div class="dropdown-content">
+                <a href="Lab1.html">Multimedia Lab</a>
+                <a href="Lab2.html">E-learning Lab</a>
+                <a href="Lab3.html">Networking Lab</a>
+                <a href="Lab4.html">IT Center Lab</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1 style="color:orange"> Electronics and Telecommunications</h1>
+
+        <div class="news-item">
+
+            <p class="khmer-text">ស្វាគមន៍មកកាន់មហាវិទ្យាល័យវិទ្យាសាស្ត្រ និងបច្ចេកវិទ្យានៃសាកលវិទ្យាល័យកម្ពុជា។
+                សម្រាប់ប្អូនៗសិស្សានុសិស្ស ដែលមានបំណងចង់បន្តការសិក្សាថ្នាក់បរិញ្ញាបត្ររង និងថ្នាក់បរិញ្ញាបត្រ។
+                សូមចុះឈ្មោះជាមួយយើងឥឡូវនេះ ឬអាចអញ្ជើញមកកាន់សាកលវិទ្យាល័យផ្ទាល់ក៏បាន។
+            </p>
+            <p class="khmer-text">Welcome to College of Science and Technology of The University of Cambodia. For
+                everyone who wishes to pursue for any AA and BA degrees of the study programs, please register now or
+                visit the campus of The University of Cambodia.
+                Electronics and telecommunications engineering is a modern engineering discipline that deals with
+                designing, fabricating, producing, testing and supervising the manufacturing process of complex
+                electronic products and systems
+                <br>
+            <h2>Student Outcomes</h2>
+            1.Students will become the electronic and telecommunication engineers with good basic knowledge, both in
+            theory and in experiments.<br>
+            2.Students master the methodology for conducting research, have critical thinking and creativity; have
+            ability of self-learning and studying electronics and telecommunications at graduate level.<br>
+            3.Students are able to design, implement the electronic equipment, operate the telecommunication systems;
+            manage, consult, and provide technical support on electronic and telecommunication products and
+            projects.<br>
+            4.Students have ability to work independently as well as together in groups in high pressure environment;
+            ability to develop and integrate in high quality job market.<br>
+            5. Students are trained to be electronic and telecommunication engineers with good specialized knowledge as
+            well as good health and professional ethics.
+
+            </p>
+        </div>
+        <h2 style="background-color:darkblue; color:white; text-align: left;">Majors Offering in College of Science and
+            Technology</h2>
+        <table>
+            <tr>
+                <th>Majors</th>
+                <th>Associate, Bachelor</th>
+                <th>Master Degree, PhD</th>
+            </tr>
+            <tr>
+                <td>Computer Science (Offering)</td>
+                <td>AA and BA</td>
+                <td>MS and PhD</td>
+            </tr>
+            <tr>
+                <td>Information Technology (Offering)</td>
+                <td>BA</td>
+                <td>MS</td>
+            </tr>
+            <tr>
+                <td>Electronics and Telecommunications (Not Offering yet)</td>
+                <td>BA</td>
+                <td>MS</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="footer">
+        <img src="image/uc.png" width="40" height="40" alt="UC Logo">
+        <p>Copyright © University of Cambodia</p>
+    </div>
+</body>
+
+</html>

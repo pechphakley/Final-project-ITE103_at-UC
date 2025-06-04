@@ -47,7 +47,7 @@
 .navbar a:hover {
   background-color: #004c99;
   transform: scale(1.05); 
-  text-shadow: 0 0 6px #FFA07A;
+ text-shadow: #003366;
 }
 
  .dropdown {
